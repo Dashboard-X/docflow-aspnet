@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StringTable>
+  <String>
+    <id>StrSpecifiedNameIsNotUnique</id>
+    <value>Specified name must be unique</value>
+  </String>
+  <String>
+    <id>StrRequiredParameterNotSpecified</id>
+    <value>Missing required parameter</value>
+  </String>
+  <String>
+    <id>StrInvalidDateRange</id>
+    <value>Invalid Date Range</value>
+  </String>
+  <String>
+    <id>StrDocIncomingNumberIsNotUnique</id>
+    <value>Specified Incoming Number is not unique</value>
+  </String>
+  <String>
+    <id>StrDocOutgoingNumberIsNotUnique</id>
+    <value>Specified Outgoing Number is not unique</value>
+  </String>
+  <String>
+    <id>StrObjectNotFoundException</id>
+    <value>Object not found</value>
+  </String>
+  <String>
+    <id>StrAccessDeniedException</id>
+    <value>Access Denied</value>
+  </String>
+  <String>
+    <id>StrRoleNameAdministrator</id>
+    <value>Administrator</value>
+  </String>
+  <String>
+    <id>StrRoleNameSystemOperator</id>
+    <value>System Operator</value>
+  </String>
+  <String>
+    <id>StrRoleNameOperator</id>
+    <value>Operator</value>
+  </String>
+  <String>
+    <id>StrRoleNameReader</id>
+    <value>Read-only access</value>
+  </String>
+
+  <String>
+    <id>StrRelatedDocuments</id>
+    <value>Related Documents</value>
+  </String>
+
+  <String>
+    <id>StrFileUploadError</id>
+    <value>Failed to upload file</value>
+  </String>    
+  
+  <String>
+    <id>StMustSelectFileType</id>
+    <value>You must select file type</value>
+  </String>    
+
+  <String>
+    <id>StrBtnBackCaption</id>
+    <value>Back</value>
+  </String>        
+
+  <String>
+    <id>StrDocumentsDeliveredOn</id>
+    <value>Documents delivered on</value>
+  </String>   
+
+  <String>
+    <id>StrNoSearchResults</id>
+    <value>Search is complete. There are no results to display.</value>
+  </String>   
+
+  <String>
+    <id>StrNumDocumentsFound</id>
+    <value>{0} Document(s) found</value>
+  </String>   
+  
+  <String>
+    <id>StrMoreThenNumDocumentsFound</id>
+    <value>More then {0} Document(s) found</value>
+  </String>   
+
+
+  <String>
+    <id>StrMenuHome</id>
+    <value>Home</value>
+  </String>   
+
+  <String>
+    <id>StrMenuDocuments</id>
+    <value>Documents</value>
+  </String>   
+
+  <String>
+    <id>StrMenuDictionaries</id>
+    <value>Dictionaries</value>
+  </String>   
+  <String>
+    <id>StrMenuSecurity</id>
+    <value>Security</value>
+  </String>   
+  <String>
+    <id>StrMenuAbout</id>
+    <value>About</value>
+  </String>   
+
+
+
+  
+  
+  
+</StringTable>

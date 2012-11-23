@@ -1,0 +1,62 @@
+Open Source C# ASP.NET Document Portal - DocFlow Manual Install Doc:
+
+Manual Configuration of the DocFlow
+
+It is often possible to install the uupx DocFlow even when the automatic configuration fails by performing the configuration steps manually.
+
+1. Install the files
+Extract DocFlow.zip to a directory on your local hard drive
+
+2. Create an IIS Vroot for the DocFlow
+Use the Internet Services Manager (inetmgr) to create a virtual root to the application's subdirectory ¡°WEB¡± below the installation directory. 
+
+3. Install the Database in Local SQL server
+Use the DocFlow.sql script from the ¡°DbScripts¡± installation directory  to create the SQL database. 
+
+4. Create Indexing Service catalog ¡°DocFlow_INDEXINGSRV¡±
+
+5. Add ¡°Data\Files¡± directory to this catalog
+
+6. Edit the Connection String in Web.Config
+Edit the ConnectionString value in the web.config file to add a valid OLE DB connection string to your database server. The name of the DocFlow database is "DocFlow".
+
+For example: 
+
+     <add key="ConnectionString" value="Provider=SQLOLEDB;server=localhost;database=DocFlow;User Id=sa;pwd=" />
+
+7. Set the ¡°IndexingServiceStorageDir¡± and ¡°OriginalStorageDir¡± values in the web.config file to absolute paths of the ¡°Data\Files¡± and ¡°Data\OriginalFiles¡± directories below the installation directory.
+
+
+If you configured the sample, you can now browse the DocFlow web on this machine at
+http://localhost/DocFlow
+Login: admin
+Password: admin
+
+
+Security Detail:
+
+The DocFlow has a role-based security.
+Each DocFlow user has one of the four predefined roles:
+- Administrator 
+- System Operator
+- Operator
+- Read-only access
+
+
+Each of these roles defines the set of the user permissions.
+
+Permissions                        Read-only access Operator System Operator Administrator
+View public documents                             * * * *
+View Documents included in a user group             * * * *
+Add new documents                                  x * * *
+View and Edit documents entered by the user         x * * *
+View and Edit all documents                      x x * *
+View and Edit all dictionaries (document types, sources, categories) x x x *
+User Management                                     x x x *
+
+Only documents with proper view permissions will appear in a search results.
+
+
+Right after the installation the Administrator user is created with the following login:
+Login : admin
+Password: admin
